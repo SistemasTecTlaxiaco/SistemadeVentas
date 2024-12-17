@@ -1,0 +1,17 @@
+[package]
+name = "sistema_de_ventas"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+doctest = false
+
+[dependencies]
+soroban-sdk = { version = "22.0.1" }
+
+[dev-dependencies]
+soroban-sdk = { version = "22.0.1", features = ["testutils"] }
+ed25519-dalek = { version = "1.0.1" }
+rand = { version = "0.7.3" }
